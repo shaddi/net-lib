@@ -26,9 +26,6 @@ from netlib.net import tcpdump
 from netlib.shell import mock
 
 
-FLAGS = flags.FLAGS
-
-
 class TCPDumpTest(unittest.TestCase):
   """Test for TCPDump.
 
