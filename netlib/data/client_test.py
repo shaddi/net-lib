@@ -14,14 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Tests for net-lib.data.client."""
+"""Tests for netlib.data.client."""
 
 __author__ = 'gavaletz@google.com (Eric Gavaletz)'
 
 import cPickle
 import unittest
 
-from net-lib.data import client
+from netlib.data import client
 
 
 # Our test data.

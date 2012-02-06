@@ -45,7 +45,7 @@ import threading
 import time
 import urlparse
 
-from net-lib import config
+from netlib import config
 
 
 HTTPS_CONNECTION = httplib.HTTPSConnection

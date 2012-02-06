@@ -14,16 +14,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Tests for net-lib.net.tcpdump."""
+"""Tests for netlib.net.tcpdump."""
 
 __author__ = 'gavaletz@google.com (Eric Gavaletz)'
 
 import os
 import unittest
 
-from net-lib import config
-from net-lib.net import tcpdump
-from net-lib.shell import mock
+from netlib import config
+from netlib.net import tcpdump
+from netlib.shell import mock
 
 
 FLAGS = flags.FLAGS

@@ -42,7 +42,7 @@ import socket
 import subprocess
 import time
 
-from net-lib import config
+from netlib import config
 
 
 class Host(object):

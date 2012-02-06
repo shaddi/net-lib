@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Tests for net-lib.net.http.
+"""Tests for netlib.net.http.
 
 mock.MockHost.results are stored for places where data needs to be returned to
 keep the objects under test happy.
@@ -24,7 +24,7 @@ __author__ = 'gavaletz@google.com (Eric Gavaletz)'
 
 import unittest
 
-from net-lib.net import http
+from netlib.net import http
 
 
 # Our test webpage.

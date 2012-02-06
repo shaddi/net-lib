@@ -16,7 +16,7 @@
 
 """Provides an HTTP connection to send and receive data from a data server.
 
-When using the provided server in net-lib this client is used to send and
+When using the provided server in netlib this client is used to send and
 receive back data from the server.  The idea here is that we want to be able
 to send and receive information from the server without having to write and then
 parse data from strings.
@@ -56,14 +56,14 @@ import logging
 import httplib
 import socket
 
-from net-lib import config
-from net-lib.net import http
+from netlib import config
+from netlib.net import http
 
 
 class DataClient(object):
   """Custom HTTP methods able to deal with python data.
 
-  This object aims to make exchanging data with the net-lib.data.server as simple
+  This object aims to make exchanging data with the netlib.data.server as simple
   as calling Send or Recv.
 
   NOTE: that currently there is not a way for servers to push data to the
@@ -81,20 +81,20 @@ class DataClient(object):
     info that we will need to open that connection later.
 
     Args:
-      server: the hostname or IP addess of the net-lib.data.server.
-      port: the port where the net-lib.data.server is listening.
+      server: the hostname or IP addess of the netlib.data.server.
+      port: the port where the netlib.data.server is listening.
     """
     self.server = server
     self.port = port
 
   def Recv(self, key=''):
-    """Pulls data from a net-lib.data.server instance.
+    """Pulls data from a netlib.data.server instance.
 
     Does an HTTP GET request to the server which should return either the data
     specifically for this host based on IP address or general data for all hosts
     based on the key.  Usually providing one or the other is sufficient, but you
     should read the documentation and source for
-    net-lib.data.server.DataServer.GetCallBack for mor details.
+    netlib.data.server.DataServer.GetCallBack for mor details.
 
     Args:
       key: the path to use for the request.
@@ -125,10 +125,10 @@ class DataClient(object):
     return data
 
   def Send(self, data, key=''):
-    """Sends data to a net-lib.data.server instance.
+    """Sends data to a netlib.data.server instance.
 
     Does an HTTP POST request to the server.  It used with the
-    net-lib.data.server the data is stored with a server-key made up of the client IP
+    netlib.data.server the data is stored with a server-key made up of the client IP
     address and the key/path given in the arguments.  For example:
 
     server-key = "%s_%s" % (client_ip, key)

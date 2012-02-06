@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Tests for net-lib.net.iperf.
+"""Tests for netlib.net.iperf.
 
 mock.MockHost.results are stored for places where data needs to be returned to
 keep the objects under test happy.
@@ -24,8 +24,8 @@ __author__ = 'gavaletz@google.com (Eric Gavaletz)'
 
 import unittest
 
-from net-lib.net import iperf
-from net-lib.shell import mock
+from netlib.net import iperf
+from netlib.shell import mock
 
 
 server_result = """------------------------------------------------------------

@@ -51,8 +51,8 @@ __author__ = 'gavaletz@google.com (Eric Gavaletz)'
 import logging
 import time
 
-from net-lib import config
-from net-lib.shell import bash
+from netlib import config
+from netlib.shell import bash
 
 
 class IperfServer(object):

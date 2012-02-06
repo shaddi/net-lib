@@ -17,7 +17,7 @@
 """Mock objects for testing system interaction.
 
   MockSubProcess: Replacement for the stdlib suprocess object.
-  MockHost: Replacement for net-lib.shell.bash.Host objects.
+  MockHost: Replacement for netlib.shell.bash.Host objects.
 
 Simple object usage:
   test_host = Host('a.remote_host.com')
@@ -29,13 +29,13 @@ Simple object usage:
 
 __author__ = 'gavaletz@google.com (Eric Gavaletz)'
 
-from net-lib.shell import bash
+from netlib.shell import bash
 
 
 class MockSubProcess(object):
   """Replacement for suprocess objects.
 
-  By using this we can re-use most of the code in net-lib.shell.bash for the
+  By using this we can re-use most of the code in netlib.shell.bash for the
   MockHost objects.  Tries to stay as close to the API for the stdlib subprocess
   as possible.
   """
@@ -80,7 +80,7 @@ class MockSubProcess(object):
 
 
 class MockHost(bash.Host):
-  """Replacement for net-lib.shell.bash.Host objects.
+  """Replacement for netlib.shell.bash.Host objects.
 
   Since we don't want to modify the state of real machines during tests this
   mock object will accept the cmd and reply with data stored the results

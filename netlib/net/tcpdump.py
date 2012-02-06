@@ -40,8 +40,8 @@ import collections
 import logging
 
 
-from net-lib import config
-from net-lib.shell import bash
+from netlib import config
+from netlib.shell import bash
 
 
 class TCPDump(object):

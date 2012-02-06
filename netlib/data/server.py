@@ -16,7 +16,7 @@
 
 """Provides an HTTP connection to send and receive data from clients.
 
-When using the provided clients in net-lib this server is used to send and
+When using the provided clients in netlib this server is used to send and
 receive back data from the clients.  The idea here is that we want to be able
 to send and receive information from clients without having to write and then
 read files from Disk.  We were motivated by the following example.
@@ -66,9 +66,9 @@ import multiprocessing
 import socket
 import sys
 
-from net-lib import config
-from net-lib.data import client
-from net-lib.net import http
+from netlib import config
+from netlib.data import client
+from netlib.net import http
 
 
 class DataHandler(BaseHTTPServer.BaseHTTPRequestHandler):

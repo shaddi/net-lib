@@ -14,13 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Tests for net-lib.data.convert."""
+"""Tests for netlib.data.convert."""
 
 __author__ = 'gavaletz@google.com (Eric Gavaletz)'
 
 import unittest
 
-from net-lib.data import convert
+from netlib.data import convert
 
 
 class ColsToRowsTest(unittest.TestCase):

@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Tests for net-lib.data.server.
+"""Tests for netlib.data.server.
 
 Test coverage is pretty light for this module, but most of the code in the
 module is boiler plate and would required many many mocks to be created.
@@ -24,7 +24,7 @@ __author__ = 'gavaletz@google.com (Eric Gavaletz)'
 
 import unittest
 
-from net-lib.data import server
+from netlib.data import server
 
 
 # Key constants
