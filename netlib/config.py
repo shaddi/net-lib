@@ -52,3 +52,13 @@ header_list = {'User-Agent': 'python-%s.%s' % ('net-lib', '0.1')}
 BANNED_NETLOCS = ['ad.doubleclick.net',
                   'fls.doubleclick.net',
                   'b.scorecardresearch.com']
+
+
+# Settings for the report module.
+EMAIL_SND = 'userName@gmail.com'
+EMAIL_SND_PASS = ''  # Fill this in to stop the password prompt.
+EMAIL_RCV = EMAIL_SND
+EMAIL_SUBJECT = 'net-lib status update'
+EMAIL_DATA_SUBJECT = 'net-lib data'
+EMAIL_SMTP = 'smtp.gmail.com'
+EMAIL_SMTP_PORT = 587
