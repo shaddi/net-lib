@@ -12,6 +12,38 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
+*******************************************************************************
+* GETTING STARTED
+*******************************************************************************
+
+ * You will need to copy netlib/configExample.py to config.py and edit it to
+   match your lab and user details.  The config file is not tracked by git
+   because we do not want to accidentally over write your config, and we don't
+   want to make it easier for you to send us data that you don't want to via a
+   patch.
+
+ * Prerequisites:
+    - Python2.6 (Python2.7 needed to run unit tests) 
+    - Paswordless SSH to end systems
+    - SSH aliases for end systems (there are workarounds for this)
+    - Passwordless sudo for end systems (there are workarounds for this too)
+
+ * Binary dependencies:
+    - iperf
+    - tcpdump
+    - Python2.6 (required on end systems for netlib.data.client)
+
+
+*******************************************************************************
+* GETTING HELP
+*******************************************************************************
+
+ * Your first stop should be the wiki http://code.google.com/p/net-lib/w/list
+
+
+*******************************************************************************
+* FUTURE WORK
+*******************************************************************************
 TODO(gavaletz) add webdriver support (http://code.google.com/p/selenium/wiki/ChromeDriver)
 TODO(gavaletz) add sqlite support
 TODO(gavaletz) add make like support for building things using shell.bash

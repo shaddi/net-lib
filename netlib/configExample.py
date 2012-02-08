@@ -18,7 +18,6 @@
 
 This module groups together variables that are referenced throughout the
 package, and provides a single place to change package configurations.
-
 """
 
 __author__ = 'gavaletz@google.com (Eric Gavaletz)'
