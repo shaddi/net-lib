@@ -39,6 +39,7 @@ limitations under the License.
 *******************************************************************************
 
  * Your first stop should be the wiki http://code.google.com/p/net-lib/w/list
+ * THEN you can try the mailing list https://groups.google.com/group/net-lib
 
 
 *******************************************************************************
@@ -47,5 +48,3 @@ limitations under the License.
 TODO(gavaletz) add webdriver support (http://code.google.com/p/selenium/wiki/ChromeDriver)
 TODO(gavaletz) add sqlite support
 TODO(gavaletz) add make like support for building things using shell.bash
-TODO(gavaletz) make sure that tests are limited to unittest.TestCase
-               https://python.corp.google.com/google3.testing.pybase.basetest.TestCase-class.html
