@@ -29,6 +29,7 @@ DATA_HOST = ''  # Symbolic name meaning the local host
 DATA_PORT = 50007  # Arbitrary non-privileged port
 LOCAL_LOOPBACK = '127.0.0.1'
 
+#TODO(user) the machine that this will be run on
 CONTROL_SERVER = 'yourServer.yourDomain.com'
 CONTROL_SERVER_PORT = 50007
 
@@ -42,7 +43,9 @@ logging.basicConfig(format=FORMAT, level=DEBUG)
 TIMEOUT = 100  # seconds
 WAIT_TIME = 5  # seconds
 
+#TODO(user) this is the most commonly used machine
 DEFAULT_HOST = 'anyhost'
+#TODO(user) this should be the interface that you use on most machines
 DEFAULT_INTERFACE = 'eth0'
 
 TCPDUMP_COUNT = 100
@@ -53,6 +56,7 @@ BANNED_NETLOCS = ['ad.doubleclick.net',
                   'b.scorecardresearch.com']
 
 
+#TODO(user) edit these to match your mail settings
 # Settings for the report module.
 EMAIL_SND = 'userName@gmail.com'
 EMAIL_SND_PASS = ''  # Fill this in to stop the password prompt.
