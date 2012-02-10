@@ -92,7 +92,7 @@ class TCPDump(object):
     self.data = None
     self.count = None
     self.child_pid = None
-    self.tmp_file = self.host.Run('mktemp -t tcpdump.dat.XXXXXXXXXX',
+    self.tmp_file = self.host.Run('sudo mktemp -t tcpdump.dat.XXXXXXXXXX',
                                   echo_error=True, fork=False).strip()
 
   def __del__(self):
@@ -108,7 +108,7 @@ class TCPDump(object):
     """
     if self.child_pid:
       self.host.Kill(self.child_pid, TCPDump.KILL_STRING)
-    self.host.Run('rm %s' % self.tmp_file, echo_error=True, fork=False)
+    self.host.Run('sudo rm %s' % self.tmp_file, echo_error=True, fork=False)
 
   def Start(self, src=None, dst=None, interface=config.DEFAULT_INTERFACE,
             count=config.TCPDUMP_COUNT):
